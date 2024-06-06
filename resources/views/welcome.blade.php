@@ -11,7 +11,15 @@
 
     <ul>
         @foreach ($links as $link)
-            <h3 style="display: inline-block; margin-left: 2em;"><a href="/">{{strtoupper($link)}}</a></h3>
+            <h3 style="display: inline-block; margin-left: 2em;">
+                <a href="
+                @if ($link === 'Test')
+                    test
+                @else
+                    /
+                @endif
+                ">{{strtoupper($link)}}</a>
+            </h3>
         @endforeach
     </ul>
 

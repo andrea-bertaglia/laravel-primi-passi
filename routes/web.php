@@ -19,6 +19,7 @@ Route::get('/', function () {
 
     $links = [
         "Home",
+        "Test",
         "Contacts",
         "About",
         "Products"
