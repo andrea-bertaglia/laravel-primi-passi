@@ -12,6 +12,9 @@
     <a href="/">HOME</a>
     <a href="test">TEST</a>
 
+    <hr>
+
+    <h2>{{ $message }} {{$page}}</h2>
 
 </body>
 </html>

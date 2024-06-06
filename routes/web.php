@@ -14,9 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $message = "THIS PAGE: ";
+    $page = "Home Page";
+
+    $data = [
+        'message'   => $message,
+        'page'      => $page
+    ];
+
+    return view('welcome', $data);
 })->name("/");
 
 Route::get('/test', function () {
-    return view('test');
+    $message = "THIS PAGE: ";
+    $page = "Test";
+
+    $data = [
+        "message"   => $message,
+        "page"      => $page
+    ];
+
+    return view('test', $data);
 })->name("test");
