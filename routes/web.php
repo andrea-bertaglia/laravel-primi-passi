@@ -17,9 +17,17 @@ Route::get('/', function () {
     $message = "THIS PAGE: ";
     $page = "Home Page";
 
+    $links = [
+        "Home",
+        "Contacts",
+        "About",
+        "Products"
+    ];
+
     $data = [
         'message'   => $message,
-        'page'      => $page
+        'page'      => $page,
+        'links'     => $links
     ];
 
     return view('welcome', $data);
